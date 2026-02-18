@@ -42,7 +42,7 @@ nav {
 
 .hero {
     display: flex;
-    align-items: top, center;
+    align-items: flex-start;
     padding: 80px 10%;
     background: linear-gradient(180deg, var(--bg-light) 0%, #fff 100%);
     flex-wrap: wrap;
