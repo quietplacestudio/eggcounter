@@ -90,6 +90,7 @@ nav {
     border: none;
     cursor: pointer;
     font-family: inherit;
+    text-align: center;
 }
 
 .btn-main:hover {
@@ -156,7 +157,7 @@ nav {
     flex-shrink: 0;
 }
 
-/* NEU: iPhone Section Styles */
+/* iPhone Section Styles */
 .iphone-section {
     padding: 80px 10%;
     background-color: #fafafa;
@@ -171,10 +172,6 @@ nav {
     border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     border: 1px solid #eee;
-}
-
-.iphone-container h2 {
-    margin-bottom: 15px;
 }
 
 #waitlist-form {
@@ -193,8 +190,32 @@ nav {
     font-size: 14px;
 }
 
-.form-group input, 
-.form-group select {
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400 !important;
+    cursor: pointer;
+    background: #fff9f0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ffe0b2;
+    transition: 0.2s;
+}
+
+.radio-label:hover {
+    background: #fff3e0;
+}
+
+.form-group input[type="email"], 
+.form-group input[type="text"] {
     width: 100%;
     padding: 12px 15px;
     border: 2px solid var(--bg-light);
