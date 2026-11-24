@@ -1,25 +1,80 @@
-Privacy Policy for Egg-Counter
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – Egg Counter – Flock Manager</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: 'Inter', Arial, sans-serif; line-height: 1.6; max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem; }
+        h1, h2 { line-height: 1.25; }
+        h2 { margin-top: 2rem; }
+        /* Placeholders to fill in or delete before publishing */
+        mark { background: #ffe58a; padding: 0 0.2em; }
+    </style>
+</head>
+<body>
 
-1. Data Collection The "Egg-Counter" app is designed to respect your privacy.
+<h1>Privacy Policy for Egg Counter – Flock Manager</h1>
+<p>Last updated: November 24, 2026</p>
+<p>This policy applies to the Android app "Egg Counter – Flock Manager" by Quiet Place Studio. It explains which data the app processes, why, and how you can delete it.</p>
 
-Local Data: All counts and sales data are stored locally on your device in a SQLite database. This data never leaves your device unless you manually export it.
+<h2>1. Data stored on your device</h2>
+<p>Everything you enter in Easy mode and Pro mode (eggs, sales, customers, expenses, groups, animals, photos, feed, incubator entries, tasks, weather history) is stored locally on your device in a database. This data does not leave your device unless you use the optional multi-user sync (section 2), export it, or create a backup yourself.</p>
 
-No Personal Data: We do not collect names, email addresses, or phone numbers.
+<h2>2. Optional multi-user sync</h2>
+<p>Multi-user sync is an optional paid feature (yearly subscription). If you choose to use it, you create an account with your name, email address and password so that several devices and family members can share the same flock data. Only in this case, the following data is stored in the cloud:</p>
+<ul>
+    <li><strong>Account data:</strong> your name, email address, a user ID and the ID of your sync group. Your password is handled by Firebase Authentication.</li>
+    <li><strong>Group data:</strong> the group name, an invite code and the list of members (up to 5 people per group).</li>
+    <li><strong>Flock data:</strong> egg collections, sales, expenses, flocks, animals, customers, incubator batches and logs, weather history, feed entries, reminders, health records, animal weights and faulty eggs.</li>
+</ul>
+<p>Photos of animals are not uploaded; they stay on your device.</p>
+<p>Purpose: to keep the data identical on all devices that use the same group. The data is stored and the account is managed by Google Firebase (Firebase Authentication and Cloud Firestore) in the Europe multi-region. It is kept until you or the group admin delete it or the account is deleted (section 8). Everyone in a group can see the flock data of that group. If you do not use multi-user sync, no account is needed and no flock data is sent to the cloud.</p>
+<p>When you sign in, the app can save your email and password in the password manager of your Google account on your device (Android Credential Manager), so you can sign in again after reinstalling. This is handled by Google and your device.</p>
 
-2. Third-Party Services Our app uses third-party services that may collect information used to identify you:
+<h2>3. Photos</h2>
+<p>Photos you add to animals are stored only on your device. The app accesses only the photos you choose or take.</p>
 
-Google AdMob: Used to display advertisements. AdMob may collect your Advertising ID to provide personalized ads. Google's Privacy Policy
+<h2>4. Weather and location</h2>
+<p>The weather feature uses the service <strong>OpenWeather</strong> (openweathermap.org) to retrieve the temperature and humidity for your location. You can set your location by searching for a city or postal code, by entering coordinates manually, or by using your device's GPS. If you search for a city or postal code, your search term is sent to OpenWeather. When the weather is retrieved, the coordinates of your location are sent to OpenWeather together with the app's request.</p>
+<p>The coordinates and city name you set are stored on your device so the app can show weather data and statistics. The daily temperature, humidity and weather description are saved in your weather history and are included in the multi-user sync if you use it. The app does not store a continuous location history. If you use GPS, the app asks for location permission. You can refuse it and enter your location manually instead. See the <a href="https://openweather.co.uk/privacy-policy">OpenWeather privacy policy</a>.</p>
 
-PayPal: When using the donation feature, you are redirected to the PayPal website. We do not store or see your credit card details or PayPal login credentials. PayPal Privacy Statement
+<h2>5. Advertising (Easy mode only)</h2>
+<p>Easy mode shows advertisements provided by <strong>Google AdMob</strong>. AdMob may collect your Advertising ID, IP address and other device information to show personalized or non-personalized ads. Where required, the app first shows a consent form from Google, and you can change your choice later in the app's settings. Pro mode does not show advertisements. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
-3. Home-Widget The app includes a Home-Widget feature. To display your egg counts on the home screen, the app uses a background process that accesses the local database. No data is transmitted to external servers during this process.
+<h2>6. Purchases</h2>
+<p><strong>Google Play Billing</strong> processes purchases and subscriptions for Pro mode (yearly subscription or one-time purchase) and for multi-user sync (yearly subscription). We do not see or store your payment details. The free trial of Pro mode is tracked on your device.</p>
 
-4. Permissions
+<h2>7. Home screen widgets, notifications and permissions</h2>
+<p>Widgets read the local database to show and add egg counts. No data is transmitted to external servers by widgets. Reminders (orders, incubator, tasks) are created on your device. The app uses these permissions:</p>
+<ul>
+    <li><strong>INTERNET</strong>: for multi-user sync, advertisements in Easy mode, weather data and purchases.</li>
+    <li><strong>AD_ID</strong>: required by the Google Mobile Ads SDK for advertisements in Easy mode.</li>
+    <li><strong>Notifications and exact alarms</strong>: to show your reminders at the time you set.</li>
+    <li><strong>Location</strong>: only if you choose to use GPS for weather data.</li>
+    <li><mark>[Camera / photo access: add only if the app's manifest requests it]</mark></li>
+</ul>
 
-INTERNET: Required to load advertisements and process donations via PayPal.
+<h2>8. Deleting your account and data</h2>
+<ul>
+    <li><strong>In the app:</strong> open the sync settings and choose "Delete account". After you confirm with your password, the app deletes your account, your user data and, if you are the admin of a group, all cloud data of that group. It also deletes the local data on your device.</li>
+    <li><strong>If you are a member and not the admin of a group:</strong> you leave the group when you delete your account. Flock data that you added to the group's shared records remains in that group and is deleted when the admin deletes the group or its cloud data.</li>
+    <li><strong>By email:</strong> if you cannot access the app, send an email from the address used for your account to <a href="mailto:quietplacestudio.dev@gmail.com">quietplacestudio.dev@gmail.com</a> with the subject "Delete my account". We will delete your account and the associated cloud data within 30 days and confirm by email.</li>
+    <li><strong>Local data only:</strong> delete it in the app or uninstall the app.</li>
+</ul>
 
-AD_ID: Required by the Google Mobile Ads SDK.
+<h2>9. Children</h2>
+<p>The app is not directed at children under 13 and we do not knowingly collect personal data from them.</p>
 
-5. Changes to This Privacy Policy We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes.
+<h2>10. Changes to this policy</h2>
+<p>We may update this policy from time to time. The date at the top shows when it was last changed.</p>
 
-6. Contact Us If you have any questions, contact us at: quietplacestudio.dev@gmail.com
+<h2>11. Contact</h2>
+<p>Questions or requests about your data: <a href="mailto:quietplacestudio.dev@gmail.com">quietplacestudio.dev@gmail.com</a></p>
+
+<p><a href="index.html">Back to Egg Counter</a></p>
+
+</body>
+</html>
